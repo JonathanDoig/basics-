@@ -1,0 +1,28 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+
+        {
+
+            
+            Console.WriteLine("Enter sales amount");
+            string input = Console.ReadLine();
+
+            decimal sales = decimal.Parse(input);
+
+            decimal bonus = 0;
+
+                if (sales > 1000)
+                {
+                    bonus = sales = 0.05m;
+                    Console.WriteLine("Your 5% bonus for the sales amount " + string.Format("{0:C}", sales) + " is " + string.Format("{0:C}", bonus));
+                }
+            
+
+        }
+    }
+}
